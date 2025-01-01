@@ -1,0 +1,164 @@
+/* Body Styles */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f2f2f2; /* Light grey background */
+  color: #252525; /* Dark grey text */
+  margin: 0;
+  padding-top: 56px; /* Adjust for fixed navbar */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #252525 !important; /* Override Bootstrap default */
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f9ed32 !important;
+}
+
+/* Header and Footer Styles */
+header, footer {
+  background-color: #252525;
+  color: white;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.footer-links li a {
+  color: white;
+}
+
+.footer-links a:hover {
+  color: #f9ed32;
+}
+
+/* Vehicle Images */
+.img-fluid {
+  border: 2px solid #343a40;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+}
+
+/* Buy Now Button */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Comparison Table */
+.table {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.table thead th {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.table td {
+  padding: 15px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .table thead {
+      display: none;
+  }
+
+  .table, .table tbody, .table tr, .table td {
+      display: block;
+      width: 100%;
+  }
+
+  .table tr {
+      margin-bottom: 15px;
+      border-bottom: 2px solid #dee2e6;
+      padding-bottom: 15px;
+  }
+
+  .table td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+  }
+
+  .table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      text-align: left;
+      font-weight: bold;
+  }
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #252525;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+  color: #FFFFFF; /* Text color for dropdown items */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #424242; /* Hover color for dropdown items */
+  color: #F9ED32; /* Hover text color */
+}

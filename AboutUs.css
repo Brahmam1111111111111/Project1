@@ -1,0 +1,27 @@
+/* General Styles */
+.my-5 {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+
+.pt-5 {
+  padding-top: 5rem !important;
+}
+
+/* Text Centering */
+.text-center {
+  text-align: center;
+}
+
+/* Heading Style */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+/* Paragraph Style */
+p {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
